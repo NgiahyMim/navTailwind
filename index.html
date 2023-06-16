@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="./app.js" defer></script>
+    <title>Navbar</title>
+</head>
+<body class="bg-white">
+    <header>
+        <nav class="fixed top-0 z-20  bg-gray-100 p-2 w-full grid grid-cols-none shadow-md  md:grid-cols-menu  md:relative md:mx-auto md:bg-transparent">
+            <div class="flex justify-between items-center md:justify-center">
+                <a href="#">
+                    <img src="./img/logo.jpg" alt="logo" class="w-8 h-8 rounded-lg">
+                </a>
+
+                <button class="icone-toggle bg-white rounded-md p-2  items-center  ring-1 ring-black ring-opacity-20 md:hidden">
+                    <img src="./img/burger.png" alt="icone hamburger" class="h-6 w-6">
+                </button>
+            </div>
+
+            <ul class="toggle-menu hidden px-1 pt-6  flex flex-col md:pt-0 md:flex md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
+                <li class="py-2 text-center border-t border-gray-400  md:border-0">
+                    <a href="#home" class="font-medium text-lg text-zinc-800 hover:text-red-400">Home</a>
+                </li>
+                <li class="py-2 text-center border-t border-gray-400  md:border-0">
+                    <a href="#services" class="font-medium text-lg text-zinc-800 hover:text-red-400">Services</a>
+                </li>
+                <li class="py-2 text-center border-t border-gray-400  md:border-0">
+                    <a href="#pricing" class="font-medium text-lg text-zinc-800 hover:text-red-400">Pricing</a>
+                </li>
+                <li class="py-2 text-center border-t border-b border-gray-400  md:border-0">
+                    <a href="#about" class="font-medium text-lg text-zinc-800 hover:text-red-400">About</a>
+                </li>
+            </ul>
+
+            <div class="toggle-menu hidden flex justify-center items-center mt-6 md:mt-0 md:justify-end md:flex">
+                <a href="#" class="shadow-md px-6 py-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-100 text-center w-40">Log in</a>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
